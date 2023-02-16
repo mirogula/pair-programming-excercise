@@ -51,6 +51,10 @@ class GildedRose(var items: Array<Item>) {
                     }
                 }
             }
+
+            if (items[i].name == "Conjured Mana Cake") {
+                items[i].quality = items[i].quality - 1
+            }
         }
     }
 
