@@ -41,7 +41,6 @@ internal class GildedRoseTest {
 
     @Test
     fun testBackstage() {
-
         val items = arrayOf(Item("Backstage passes to a TAFKAL80ETC concert", 5, 49))
 
         val app = GildedRose(items)
@@ -59,7 +58,7 @@ internal class GildedRoseTest {
 
     @Test
     fun testSulfures() {
-        val items = arrayOf(Item("Sulfuras, Hand of Ragnaros", 0, 80),)
+        val items = arrayOf(Item("Sulfuras, Hand of Ragnaros", 0, 80))
 
         val app = GildedRose(items)
 
@@ -71,7 +70,6 @@ internal class GildedRoseTest {
         printItems(2, items)
         assertEquals(80, app.items[0].quality)
     }
-
 
     @Test
     fun testAgedBrie() {
@@ -96,7 +94,4 @@ internal class GildedRoseTest {
         }
         println()
     }
-
 }
-
-
