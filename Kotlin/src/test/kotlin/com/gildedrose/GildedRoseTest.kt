@@ -35,9 +35,17 @@ internal class GildedRoseTest {
         app.updateQuality()
         printItems(1, items)
         assertEquals(4, app.items.findLast { it.name === "Conjured Mana Cake" }?.quality)
+        assertEquals(1, app.items.findLast { it.name === "Aged Brie" }?.quality)
+        assertEquals(6, app.items.findLast { it.name === "Elixir of the Mongoose" }?.quality)
+        assertEquals(50, app.items.findLast { it.name === "Backstage passes to a TAFKAL80ETC concert" }?.quality)
+        assertEquals(80, app.items.findLast { it.name === "Sulfuras, Hand of Ragnaros" }?.quality)
         app.updateQuality()
         printItems(2, items)
         assertEquals(2, app.items.findLast { it.name === "Conjured Mana Cake" }?.quality)
+        assertEquals(2, app.items.findLast { it.name === "Aged Brie" }?.quality)
+        assertEquals(5, app.items.findLast { it.name === "Elixir of the Mongoose" }?.quality)
+        assertEquals(50, app.items.findLast { it.name === "Backstage passes to a TAFKAL80ETC concert" }?.quality)
+        assertEquals(80, app.items.findLast { it.name === "Sulfuras, Hand of Ragnaros" }?.quality)
     }
 
     private fun printItems(i: Int, items: Array<Item>) {

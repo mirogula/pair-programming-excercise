@@ -3,6 +3,15 @@ package com.gildedrose
 class GildedRose(var items: Array<Item>) {
 
     fun updateQuality() {
+//        items.forEach {
+//            when(it.name) {
+//                "Aged Brie" -> {}
+//                "Backstage passes to a TAFKAL80ETC concert" -> {}
+//                "Sulfuras, Hand of Ragnaros" -> {}
+//                "Conjured Mana Cake" -> {}
+//            }
+//        }
+
         for (i in items.indices) {
             if (items[i].name != "Aged Brie" && items[i].name != "Backstage passes to a TAFKAL80ETC concert") {
                 if (items[i].quality > 0) {
